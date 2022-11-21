@@ -7,7 +7,7 @@ import {
   CircularProgress,
 } from "@material-ui/core";
 import { TradingViewWidget } from "./TradingViewWidget ";
-
+import Forum from "./Forum";
 
 const CoinInfo = ({ coin }) => {
   const { currency, symbol } = CryptoState();
@@ -31,6 +31,7 @@ const CoinInfo = ({ coin }) => {
       padding: 20,
       paddingTop: 10,
       paddingBottom: 10,
+      height: "100%",
       [theme.breakpoints.down("md")]: {
         width: "100%",
         marginTop: 0,
@@ -52,6 +53,7 @@ const CoinInfo = ({ coin }) => {
         ) : (
           <>
           <TradingViewWidget symbol={coin.symbol} />
+          <Forum symbol={coin.symbol} />
           </>
         )}
       </div>

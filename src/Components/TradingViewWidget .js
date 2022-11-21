@@ -68,7 +68,7 @@ const TradingViewWidget = ({symbol}) => {
     const useStyles = makeStyles((theme) => ({
       container: {
         width: "100%",
-        height: "100%",
+        height: "90vh",
         [theme.breakpoints.down("md")]: {
           width: "100%",
           height: "90vh",
